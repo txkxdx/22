@@ -1,0 +1,59 @@
+#include <iostream>
+#include <string>
+#include <Windows.h>
+using namespace std;
+
+int main()
+{
+	setlocale(0, "");
+	
+	cout << "Введите 7 чисел для инициализации массива " << endl;
+	int a;
+	int b; 
+	int c; 
+	int d; 
+	int e; 
+	int f; 
+	int g; 
+	int answer;
+	cout << "Инициализация | ячейка 0: "; cin >> a;
+	cout << "Инициализация | ячейка 1: "; cin >> b;
+	cout << "Инициализация | ячейка 2: "; cin >> c;
+	cout << "Инициализация | ячейка 3: "; cin >> d;
+	cout << "Инициализация | ячейка 4: "; cin >> e;
+	cout << "Инициализация | ячейка 5: "; cin >> f;
+	cout << "Инициализация | ячейка 6: "; cin >> g;
+
+	Sleep(1500);
+	cout << "\x1b[91mСпасибо =) смотри дальше B)";
+	Sleep(1500);
+
+	system("cls");
+	int array1[7]{ a,b,c,d,e,f,g };
+
+	cout << "\x1b[91m[+] Настройки массива: \n\n";
+	cout << "\x1b[92m[1] Сортировка по возрастанию \n";
+	cout << "\x1b[92m[2] Сортировка по убыванию \n";
+	cout << "\x1b[92m[3] Перемножить массив \n";
+	cout << "\x1b[92m[4] Сложить массив \n";
+	cout << "\x1b[92m[5] Разделить массив \n";
+	cout << "\x1b[92m[6] Обнулить массив \n\n";
+	cout << "\x1b[91m[7] Задать новые значения массиву \n";
+	cout << "Ввод: "; cin >> answer;
+	if (answer == 1) {
+		for (int i = 0; i < 7; i++) {
+			if (array1[i] > array1[i + 1]) {
+				swap(array1[i], array1[i + 1])
+					sw = true;
+			}
+		}
+		if (sw == false)
+			break;
+	}
+
+
+	
+
+
+
+}
